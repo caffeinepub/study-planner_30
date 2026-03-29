@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+
+    /* StudySync palette */
+    --navy: 0.27 0.07 240;
+    --navy-teal: 0.4 0.08 222;
+    --hero-bg: 0.97 0.015 215;
+    --orange: 0.75 0.16 63;
+    --progress-blue: 0.6 0.2 255;
+    --progress-green: 0.66 0.22 145;
+    --section-bg: 0.97 0.01 248;
+
+    /* Semantic tokens */
+    --background: 0.98 0.005 220;
+    --foreground: 0.17 0.05 243;
+    --card: 1 0 0;
+    --card-foreground: 0.17 0.05 243;
+    --popover: 1 0 0;
+    --popover-foreground: 0.17 0.05 243;
+    --primary: 0.27 0.07 240;
+    --primary-foreground: 0.98 0 0;
+    --secondary: 0.94 0.02 220;
+    --secondary-foreground: 0.27 0.07 240;
+    --muted: 0.96 0.01 220;
+    --muted-foreground: 0.45 0.03 220;
+    --accent: 0.75 0.16 63;
+    --accent-foreground: 1 0 0;
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+    --border: 0.9 0.02 220;
+    --input: 0.9 0.02 220;
+    --ring: 0.6 0.2 255;
+    --chart-1: 0.6 0.2 255;
+    --chart-2: 0.66 0.22 145;
+    --chart-3: 0.75 0.16 63;
+    --chart-4: 0.65 0.12 300;
+    --chart-5: 0.7 0.15 180;
+    --sidebar: 0.27 0.07 240;
+    --sidebar-foreground: 0.96 0.01 220;
+    --sidebar-primary: 0.75 0.16 63;
+    --sidebar-primary-foreground: 1 0 0;
+    --sidebar-accent: 0.35 0.07 235;
+    --sidebar-accent-foreground: 0.96 0.01 220;
+    --sidebar-border: 0.35 0.06 235;
+    --sidebar-ring: 0.6 0.2 255;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 700;
+  }
+}
+
+/* Custom utilities */
+.nav-gradient {
+  background: linear-gradient(135deg, oklch(0.27 0.07 240), oklch(0.4 0.08 222));
+}
+
+.hero-bg {
+  background-color: oklch(0.97 0.015 215);
+}
+
+.section-bg {
+  background-color: oklch(0.97 0.01 248);
+}
+
+.progress-bar-blue {
+  background-color: oklch(0.6 0.2 255);
+}
+
+.progress-bar-green {
+  background-color: oklch(0.66 0.22 145);
+}
